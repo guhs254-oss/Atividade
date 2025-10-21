@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href= "img/favicon-16x16.png" type= "image/x-icon">
+  <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
   <title>Mão Amiga</title>
 </head>
 
@@ -13,11 +13,14 @@
   <!-- ====== CABEÇALHO ====== -->
   <header>
     <h1>Mão Amiga</h1>
+    <p class="subtitulo">Conectando solidariedade e esperança!</p>
   </header>
 
   <!-- ====== MENU DE NAVEGAÇÃO ====== -->
-  <nav>
-    <ul>
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle"></div>
+    <ul id="menu">
+      <li><a href="index.html" class="ativo">Início</a></li>
       <li><a href="projetos.html">Projetos Sociais</a></li>
       <li><a href="cadastro.html">Cadastro</a></li>
     </ul>
@@ -30,81 +33,106 @@
       Nosso objetivo é conectar pessoas que precisam de ajuda com aquelas dispostas a ajudar.
       Junte-se a nós para fazer a diferença na vida de alguém hoje!
     </p>
-    <img src="img/mãos.jpg" alt="Mãos ajudando" class="img-mãos">
-    <img src="img/kids.webp" alt="Crianças felizes" class="img-kids">
+    <div class="imagens-principais">
+      <img src="img/mãos.jpg" alt="Mãos ajudando" class="img-mãos">
+      <img src="img/kids.webp" alt="Crianças felizes" class="img-kids">
+    </div>
   </section>
 
   <!-- ====== CARDS DE INFORMAÇÃO ====== -->
   <section class="cards">
 
     <div class="card1">
-      <h2 class="card">Sobre Nós</h2>
+      <h2>Sobre Nós</h2>
       <p>
         Somos uma organização dedicada a promover a solidariedade e o apoio mútuo.
         Acreditamos que pequenas ações podem transformar vidas, levando esperança e oportunidades
         a comunidades em situação de vulnerabilidade.
-        Trabalhamos para conectar pessoas dispostas a ajudar com aquelas que mais precisam,
-        construindo pontes de empatia e colaboração.
       </p>
     </div>
 
     <div class="card2">
       <h2>Missão</h2>
       <p>
-        A Mão Amiga tem como missão transformar vidas por meio da solidariedade,
-        conectando pessoas dispostas a ajudar com aquelas que mais precisam.
-        Trabalhamos para reduzir desigualdades sociais, promover a cidadania e incentivar a empatia,
-        levando esperança e oportunidades a comunidades em situação de vulnerabilidade.
+        Transformar vidas por meio da solidariedade, conectando pessoas dispostas a ajudar com aquelas que mais precisam.
       </p>
       <p>
-        Nossa missão é facilitar a conexão entre pessoas que precisam de ajuda
-        e aquelas que desejam contribuir, criando uma rede de apoio que fortaleça nossa comunidade.
+        Trabalhamos para reduzir desigualdades sociais, promover a cidadania e incentivar a empatia.
       </p>
     </div>
 
     <div class="card3">
       <h2>Visão</h2>
       <p>
-        Ser reconhecida como uma organização líder em solidariedade, inspirando ações positivas.
-        Ser uma referência nacional em voluntariado e impacto social, reconhecida pela transparência,
-        credibilidade e capacidade de unir pessoas em torno de um propósito comum:
-        construir um futuro mais justo e humano para todos.
-      </p>
-      <p>
-        Almejamos ser uma organização que inspira confiança e engajamento,
-        promovendo uma cultura de solidariedade ativa e cidadania participativa em todas as regiões do país.
-      </p>
-      <p>
-        Queremos fortalecer redes de apoio, conectar comunidades e impulsionar ações que transformem realidades,
-        tornando o voluntariado uma força motriz para o desenvolvimento social sustentável e inclusivo.
+        Ser reconhecida como uma organização líder em solidariedade e impacto social, inspirando ações positivas
+        e transformadoras em todo o país.
       </p>
     </div>
 
     <div class="card4">
       <h2>Valores</h2>
-      <p>1 - Solidariedade: acreditamos que pequenas atitudes podem gerar grandes mudanças.</p>
-      <p>2 - Respeito: valorizamos a dignidade e os direitos de cada indivíduo.</p>
-      <p>3 - Transparência: agimos com ética e clareza em todas as nossas ações e parcerias.</p>
-      <p>4 - Comprometimento: dedicamos nossos esforços para gerar resultados reais e duradouros.</p>
-      <p>5 - Esperança: trabalhamos para inspirar um ciclo contínuo de empatia e transformação social.</p>
+      <ul>
+        <li><strong>Solidariedade:</strong> pequenas atitudes geram grandes mudanças.</li>
+        <li><strong>Respeito:</strong> valorizamos a dignidade e os direitos de cada indivíduo.</li>
+        <li><strong>Transparência:</strong> agimos com ética e clareza em todas as ações.</li>
+        <li><strong>Comprometimento:</strong> buscamos resultados reais e duradouros.</li>
+        <li><strong>Esperança:</strong> inspiramos empatia e transformação social.</li>
+      </ul>
     </div>
 
     <div class="card5">
       <h2>História e Conquistas</h2>
       <p>
-        Desde nossa fundação, temos impactado positivamente a vida de milhares de pessoas através de campanhas de arrecadação,
+        Desde nossa fundação, impactamos positivamente a vida de milhares de pessoas com campanhas de arrecadação,
         programas educacionais e iniciativas comunitárias.
-        Nossas conquistas refletem o compromisso e a dedicação de todos que fazem parte do Mão Amiga.<h2 class="card">
       </p>
     </div>
-
   </section>
 
+  <!-- ====== SEÇÃO DE DEPOIMENTOS ====== -->
+  <section class="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="depoimento">
+      <p>“Graças à Mão Amiga consegui alimentos e apoio quando mais precisei. Hoje sou voluntária e ajudo outras famílias!”</p>
+      <span>— Maria dos Santos, beneficiária e voluntária</span>
+    </div>
+    <div class="depoimento">
+      <p>“A solidariedade é contagiante. Participar desse projeto mudou a forma como vejo o mundo.”</p>
+      <span>— João Almeida, colaborador</span>
+    </div>
+  </section>
 
+  <!-- ====== SEÇÃO DE COMO AJUDAR ====== -->
+  <section class="como-ajudar">
+    <h2>Como Você Pode Ajudar</h2>
+    <p>Existem várias formas de contribuir para a causa:</p>
+    <ul>
+      <li>📦 Doando alimentos, roupas e produtos de higiene.</li>
+      <li>💰 Contribuindo financeiramente com nossos projetos sociais.</li>
+      <li>🕒 Oferecendo seu tempo como voluntário.</li>
+      <li>📢 Divulgando nossas ações e campanhas nas redes sociais.</li>
+    </ul>
+    <a href="cadastro.html" class="botao">Seja um Voluntário</a>
+  </section>
 
-<!-- ====== RODAPÉ ====== -->
+  <!-- ====== SEÇÃO DE CONTATO RÁPIDO ====== -->
+  <section class="contato-rapido">
+    <h2>Entre em Contato</h2>
+    <p>Tem dúvidas ou quer fazer parte do projeto? Fale conosco!</p>
+    <form class="form-contato">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- ====== RODAPÉ ====== -->
   <footer>
     <p>© 2025 Mão Amiga — Todos os direitos reservados</p>
   </footer>
+
+  <!-- ====== SCRIPT ====== -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

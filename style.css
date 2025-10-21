@@ -233,3 +233,43 @@ footer {
         margin: 10px 0;
     }
 }
+
+.img-saúde {
+    width: 800px;
+    max-width: 11111px;
+    border-radius: 12px;
+    margin-top: 20px;
+    max-width: 100%;
+  height: auto;
+}
+
+.img-alimente1 {
+    width: 800px;
+    max-width: 11111px;
+    border-radius: 12px;
+    margin-top: 20px;
+    max-width: 100%;
+  height: auto;
+}
+
+.img-capacita {
+    width: 800px;
+    max-width: 11111px;
+    border-radius: 12px;
+    margin-top: 20px;
+    max-width: 100%;
+  height: auto;
+}
+
+.cor1 {
+    background-color: #f2f7f2;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.cor2 {
+   color: #388E3C;
+}
+
